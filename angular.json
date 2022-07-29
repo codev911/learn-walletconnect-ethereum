@@ -17,6 +17,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "@walletconnect/web3-provider",
+              "@walletconnect/window-metadata",
+              "@walletconnect/socket-transport",
+              "@walletconnect/environment",
+              "@walletconnect/qrcode-modal",
+              "query-string",
+              "hash.js"
+            ],
             "outputPath": "dist/walletconnect-ethereum",
             "index": "src/index.html",
             "main": "src/main.ts",
